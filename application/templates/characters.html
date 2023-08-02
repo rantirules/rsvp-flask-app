@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Friends Characters</h1>
+{% for character in characters %}
+<h1>{{character.name}}</h1>
+<h1>{{character.age}}</h1>
+<h1>{{character.catch_phrase}}</h1>
+{% endfor %}
+{% endblock content %}

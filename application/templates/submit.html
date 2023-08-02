@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <fieldset>
+        <legend>Create a Friends Character</legend>
+        <div>
+            {{ form.name.label }}
+            {{ form.name }}
+        </div>
+        <div>
+            {{ form.age.label }}
+            {{ form.age }}
+        </div>
+        <div>
+            {{ form.catch_phrase.label }}
+            {{ form.catch_phrase }}
+        </div>
+    </fieldset>
+    <div>
+        {{ form.submit }}
+    </div>
+</form>
+{% endblock content %}
