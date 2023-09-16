@@ -4,6 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
     {% if title %}
     <title>Flask app - {{title}}</title>
     {% else %}
@@ -11,6 +30,10 @@
     {% endif %}
 </head>
 
-<body>{% block content %}{% endblock %}</body>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
 
 </html>

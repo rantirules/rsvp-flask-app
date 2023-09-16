@@ -12,7 +12,8 @@ def format_character(character):
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    # return "<p>Hello, World!</p>"
+    return render_template('home.html')
 
 # GET
 @app.route("/success")
