@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+    .characters-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .character {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+    }
+
+    .character h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .character p {
+        font-size: 1.2em;
+        color: #555;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
+</style>
+
+<div class="characters-container">
+    <h1>Guest List</h1>
+    {% for character in characters %}
+        <div class="character">
+            <h1>{{character.name}}</h1>
+            <p><strong>Number of guests:</strong> {{character.age}}</p>
+            <p><strong>Special Requests:</strong> {{character.catch_phrase}}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}
