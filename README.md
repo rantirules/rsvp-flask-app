@@ -1,7 +1,13 @@
 # Event RSVP and Guest List Organizer
-Welcome to the Event RSVP and Guest List Organizer! RSVP for our upcoming event and let us know how many guests you're bringing!
+<p text-align="center"> <strong> Welcome to the Event RSVP and Guest List Organizer! RSVP for our upcoming event and let us know how many guests you're bringing! </strong></p>
 
 This repository contains the source code for an event management web application. Users can RSVP for upcoming events, indicate the number of guests they're bringing, and provide any special requests or dietary restrictions. The application is built using Flask and integrates with a database to store RSVP information.
+
+
+
+<img width="1000" alt="image" src="https://github.com/rantirules/rsvp-flask-app/assets/13412593/c8ee3c47-8247-4700-bc66-0dc8006b1e59">
+<!-- <img width="500" alt="image" src="https://github.com/rantirules/rsvp-flask-app/assets/13412593/ba6ddc7a-95cf-4f63-9422-ddcc6d70381b"> -->
+
 
 ## Getting Started
 To run the project, follow these steps:
