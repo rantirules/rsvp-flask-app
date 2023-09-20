@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+    .character-info {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .character-info h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .character-info p {
+        font-size: 1.2em;
+        color: #555;
+    }
+</style>
+
+<div class="character-info">
+    <h1>{{character.name}}</h1>
+    <p>Number of guests: {{character.age}}</p>
+    <p>Special Requests: {{character.catch_phrase}}</p>
+</div>
+{% endblock content %}
