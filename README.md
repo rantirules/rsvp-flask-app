@@ -41,17 +41,17 @@ This will start the development server, and you can access the application at ht
 Make sure .env file is in application directory like so
 
 ```bash
-├── Pipfile
-├── Pipfile.lock
-├── README.md
-├── app.py
-├── application
-│   ├── __init__.py
-│   ├── .env
-│   ├── forms.py
-│   ├── models.py
-│   ├── routes.py
-│   └── templates
+|── Pipfile
+|── Pipfile.lock
+|── README.md
+|── app.py
+|── application
+|   |── __init__.py
+|   |── .env
+|   |── forms.py
+|   |── models.py
+|   |── routes.py
+|   └── templates
 ```
 Your .env file should look like the following
 ```
