@@ -51,7 +51,7 @@ Make sure .env file is in application directory like so
 |   |── forms.py
 |   |── models.py
 |   |── routes.py
-|   └── templates
+|   |__ templates
 ```
 Your .env file should look like the following
 ```
